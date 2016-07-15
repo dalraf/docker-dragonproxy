@@ -1,9 +1,8 @@
-FROM java:openjdk-8-alpine
+FROM java:openjdk-8-jre
 
 ADD dragon.jar /
 
 EXPOSE 19132
 
-#CMD ["java","-jar","nukkit.jar"]
-
+CMD ["java","-jar","dragon.jar"]
 
